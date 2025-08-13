@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         android:fontFamily="@font/nunito_sans"
-        android:text="Клиент-серверное приложение\nдля учёта записи\nклиентов в ателье"
+        android:text="Клиент-серверное приложение\nдля учёта записи\nклиентов в автосервисе"
         android:textAlignment="center"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/textView"
@@ -57,8 +57,8 @@
         app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:thumbTint="@color/dark_button"
-        app:trackTint="@color/text_or_button"/>
+        app:thumbTint="@color/black"
+        app:trackTint="@color/red"/>
 
     <Button
         android:id="@+id/btnNext"

@@ -4,8 +4,8 @@
         <item name="android:textViewStyle">@style/TextView</item>
         <item name="editTextStyle">@style/EditText</item>
 
-        <item name="android:background">@color/light_yellow</item>
-        <item name="colorPrimary">@color/white</item>
+        <item name="android:background">@color/white</item>
+        <item name="colorPrimary">@color/red</item>
     </style>
 
     <style name="Widget.CarServiceApp.Button" parent="Widget.Material3.Button">
@@ -22,9 +22,9 @@
     </style>
 
     <style name="EditText" parent="android:Widget.EditText">
-        <item name="android:textColor">@color/orange</item>
+        <item name="android:textColor">@color/text_or_button</item>
         <item name="android:fontFamily">@font/nunito_sans</item>
-        <item name="android:textColorHint">@color/orange</item>
+        <item name="android:textColorHint">@color/text_or_button</item>
         <item name="android:textSize">20sp</item>
         <item name="android:background">@drawable/edittext_rounded_corners</item>
     </style>

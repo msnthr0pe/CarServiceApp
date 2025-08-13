@@ -4,9 +4,6 @@
     <item android:state_pressed="true" android:state_focused="true">
         <shape>
             <solid android:color="?attr/colorPrimary"/>
-            <stroke
-                android:width="3dp"
-                android:color="@color/black"/> <!-- Чёрная окантовка -->
             <corners android:radius="15dp" />
             <padding
                 android:left="12dp"
@@ -19,9 +16,6 @@
     <item android:state_focused="true">
         <shape>
             <solid android:color="?attr/colorPrimary"/>
-            <stroke
-                android:width="3dp"
-                android:color="@color/black"/>
             <corners android:radius="15dp" />
             <padding
                 android:left="12dp"
@@ -34,9 +28,6 @@
     <item>
         <shape>
             <solid android:color="?attr/colorPrimary"/>
-            <stroke
-                android:width="3dp"
-                android:color="@color/black"/>
             <corners android:radius="15dp" />
             <padding
                 android:left="12dp"
