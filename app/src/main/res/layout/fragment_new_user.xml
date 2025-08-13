@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="124dp"
+        android:text="Создать учётную\nзапись"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNameNewUser"
+        android:layout_width="334dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Имя"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <EditText
+        android:id="@+id/etSurnameNewUser"
+        android:layout_width="334dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Фамилия"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/etNameNewUser"
+        app:layout_constraintTop_toBottomOf="@+id/etNameNewUser" />
+
+    <EditText
+        android:id="@+id/etPhoneNewUser"
+        android:layout_width="334dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Ваш номер телефона"
+        android:inputType="phone"
+        app:layout_constraintStart_toStartOf="@+id/etSurnameNewUser"
+        app:layout_constraintTop_toBottomOf="@+id/etSurnameNewUser" />
+
+    <EditText
+        android:id="@+id/etEmailNewUser"
+        android:layout_width="334dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/etPhoneNewUser"
+        app:layout_constraintTop_toBottomOf="@+id/etPhoneNewUser" />
+
+    <EditText
+        android:id="@+id/etPasswordNewUser"
+        android:layout_width="334dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/etEmailNewUser"
+        app:layout_constraintTop_toBottomOf="@+id/etEmailNewUser" />
+
+    <EditText
+        android:id="@+id/etRetypePasswordNewUser"
+        android:layout_width="334dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Повторите пароль"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/etPasswordNewUser"
+        app:layout_constraintTop_toBottomOf="@+id/etPasswordNewUser" />
+
+    <Button
+        android:id="@+id/btnContinueNewUser"
+        android:layout_width="334dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="72dp"
+        android:text="Продолжить"
+        app:layout_constraintEnd_toEndOf="@+id/etRetypePasswordNewUser"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etRetypePasswordNewUser"
+        app:layout_constraintTop_toBottomOf="@+id/etRetypePasswordNewUser" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/tvIsAdministrator"
+        app:layout_constraintEnd_toStartOf="@+id/tvIsAdministrator"
+        app:layout_constraintTop_toTopOf="@+id/tvIsAdministrator" />
+
+    <TextView
+        android:id="@+id/tvIsAdministrator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="20dp"
+        android:text="Администратор"
+        android:textColor="@color/orange"
+        app:layout_constraintStart_toStartOf="@+id/etRetypePasswordNewUser"
+        app:layout_constraintTop_toBottomOf="@+id/etRetypePasswordNewUser" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

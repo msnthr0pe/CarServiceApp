@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="112dp"
+        android:text="Запись \nклиента"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNameRequest"
+        android:layout_width="334dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Имя"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <EditText
+        android:id="@+id/etDateRequest"
+        android:layout_width="334dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Дата"
+        android:inputType="text"
+        android:enabled="false"
+        app:layout_constraintStart_toStartOf="@+id/etNameRequest"
+        app:layout_constraintTop_toBottomOf="@+id/etNameRequest" />
+
+    <EditText
+        android:id="@+id/etTimeRequest"
+        android:layout_width="334dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Время"
+        android:inputType="time"
+        app:layout_constraintStart_toStartOf="@+id/etDateRequest"
+        app:layout_constraintTop_toBottomOf="@+id/etDateRequest" />
+
+    <EditText
+        android:id="@+id/etPhoneRequest"
+        android:layout_width="334dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Номер телефона клиента"
+        android:inputType="phone"
+        app:layout_constraintStart_toStartOf="@+id/etTimeRequest"
+        app:layout_constraintTop_toBottomOf="@+id/etTimeRequest" />
+
+    <EditText
+        android:id="@+id/etEmailRequest"
+        android:layout_width="334dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/etPhoneRequest"
+        app:layout_constraintTop_toBottomOf="@+id/etPhoneRequest" />
+
+    <EditText
+        android:id="@+id/etDescriptionRequest"
+        android:layout_width="334dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:gravity="left"
+        android:hint="Описание"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/etEmailRequest"
+        app:layout_constraintTop_toBottomOf="@+id/etEmailRequest" />
+
+    <ImageView
+        android:id="@+id/ivCalendarRequest"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/etDateRequest"
+        app:layout_constraintEnd_toEndOf="@+id/etDateRequest"
+        app:layout_constraintTop_toTopOf="@+id/etDateRequest"
+        app:layout_constraintVertical_bias="0.466"
+        app:srcCompat="@drawable/ic_calendar" />
+
+    <Button
+        android:id="@+id/btnContinueNewUser"
+        android:layout_width="334dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:text="Записать"
+        app:layout_constraintStart_toStartOf="@+id/etDescriptionRequest"
+        app:layout_constraintTop_toBottomOf="@+id/etDescriptionRequest" />
+</androidx.constraintlayout.widget.ConstraintLayout>
