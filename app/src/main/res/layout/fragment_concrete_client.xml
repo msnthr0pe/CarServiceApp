@@ -60,7 +60,6 @@
         android:ems="10"
         android:enabled="false"
         android:text="88005553535"
-        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="@+id/tvNameConcrete"
         app:layout_constraintTop_toBottomOf="@+id/tvNameConcrete" />
 
@@ -72,7 +71,6 @@
         android:ems="10"
         android:enabled="false"
         android:text="email@email.com"
-        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="@+id/tvPhoneConcrete"
         app:layout_constraintTop_toBottomOf="@+id/tvPhoneConcrete" />
 </androidx.constraintlayout.widget.ConstraintLayout>

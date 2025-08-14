@@ -23,7 +23,7 @@
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:src="@drawable/ic_home"
-            app:tint="@color/dark_button" />
+            app:tint="@color/gray" />
 </LinearLayout>
 
 <LinearLayout
@@ -55,7 +55,7 @@ android:orientation="vertical">
     android:layout_width="35dp"
     android:layout_height="35dp"
     android:src="@drawable/ic_profile"
-    app:tint="@color/dark_button" />
+    app:tint="@color/gray" />
 </LinearLayout>
 
     </LinearLayout>
