@@ -37,11 +37,6 @@ class LoginFragment : Fragment() {
     lateinit var btnLogin: Button
     lateinit var tvRegister: TextView
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -119,10 +114,6 @@ class LoginFragment : Fragment() {
                 Toast.makeText(requireContext(), "Ошибка сети: ${t.message}", Toast.LENGTH_SHORT).show()
             }
         })
-    }
-
-    companion object {
-
     }
 
     override fun onDestroyView() {

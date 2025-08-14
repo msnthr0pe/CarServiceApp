@@ -32,11 +32,6 @@ class PasswordChangeFragment : Fragment() {
     private lateinit var etNewPassword: EditText
     private lateinit var btnContinue: Button
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -78,10 +73,6 @@ class PasswordChangeFragment : Fragment() {
             PasswordDTO(email, newPassword)
         )
         findNavController().navigate(R.id.action_passwordChangeFragment_to_profileInfoFragment)
-    }
-
-    companion object {
-
     }
 
     override fun onDestroyView() {
