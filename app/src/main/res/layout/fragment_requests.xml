@@ -43,14 +43,16 @@
         android:id="@+id/btnAdd"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="96dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="14dp"
         android:background="@drawable/round_button"
         android:elevation="6dp"
         android:scaleType="center"
         android:src="@drawable/ic_add"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/tvSearchClientsRequests"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvSearchClientsRequests"
+        app:layout_constraintTop_toTopOf="@+id/tvSearchClientsRequests"
         app:tint="#FFFFFF" />
 
     <Button
@@ -58,16 +60,14 @@
         android:layout_width="310dp"
         android:layout_height="55dp"
         android:layout_marginStart="14dp"
-        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="100dp"
         android:background="@drawable/edittext_rounded_corners"
         android:ems="10"
         android:gravity="center"
         android:text="Поиск по клиентской базе"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/btnAdd"
-        app:layout_constraintEnd_toStartOf="@+id/btnAdd"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btnAdd" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView9"
