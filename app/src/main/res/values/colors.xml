@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="light_yellow">#FEFAE0</color>
-    <color name="text_or_button">#212121</color>
-    <color name="dark_button">#283618</color>
-    <color name="orange">#BC6C25</color>
-    <color name="light_orange">#FFEDCF</color>
-    <color name="white">#FFFFFF</color>
-    <color name="gray">#3C3C3C</color>
-    <color name="on_surface">#000000</color>
+    <color name="light_yellow">#FF9500</color> <!-- ярко-золотой -->
+    <color name="text_or_button">#8A2BE2</color> <!-- фиолетово-синий -->
+    <color name="dark_button">#2F4F4F</color> <!-- темно-серый с зеленым оттенком -->
+    <color name="dark_gray">#1F1F1F</color> <!-- насыщенный оранжево-красный -->
+    <color name="light_orange">#FFA07A</color> <!-- светло-коралловый -->
+    <color name="white">#E0FFFF</color> <!-- бледно-голубой, почти белый -->
+    <color name="gray">#23292E</color> <!-- серо-голубой -->
+    <color name="on_surface">#191970</color> <!-- темно-синий, «ночное небо» -->
 
 
     <color name="red">#E53935</color>
     <color name="dark_red">#831010</color>
     <color name="black">#FF000000</color>
-
-
-    <color name="dark_yellow">#262600</color>
+    <color name="purple">#8A2BE2</color>
+    <color name="light_purple">#EEE0FF</color>
 
 </resources>

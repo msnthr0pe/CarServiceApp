@@ -1,32 +1,41 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <style name="Base.Theme.CarServiceApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Кнопки -->
         <item name="materialButtonStyle">@style/Widget.CarServiceApp.Button</item>
+        <!-- Текст -->
         <item name="android:textViewStyle">@style/TextView</item>
+        <!-- Поля ввода -->
         <item name="editTextStyle">@style/EditText</item>
 
-        <item name="android:background">@color/white</item>
-        <item name="colorPrimary">@color/red</item>
+        <!-- Основной фон и акценты -->
+        <item name="iconColor">@color/gray</item>
+        <item name="android:background">@drawable/white_background</item>
+        <item name="colorPrimary">@color/dark_gray</item>
+        <item name="colorSecondary">@color/purple</item>
+        <item name="android:colorAccent">@color/light_yellow</item>
     </style>
 
     <style name="Widget.CarServiceApp.Button" parent="Widget.Material3.Button">
-        <item name="android:textColor">@color/light_yellow</item>
+        <item name="android:textColor">@color/white</item>
         <item name="backgroundTint">@color/text_or_button</item>
-        <item name="android:textSize">20sp</item>
-        <item name="android:fontFamily">@font/nunito_sans</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/roboto_mono</item>
+        <item name="cornerRadius">16dp</item>
     </style>
 
     <style name="TextView" parent="android:Widget.TextView">
         <item name="android:textColor">@color/text_or_button</item>
-        <item name="android:fontFamily">@font/nunito_sans</item>
-        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/roboto_mono</item>
+        <item name="android:textSize">18sp</item>
     </style>
 
     <style name="EditText" parent="android:Widget.EditText">
         <item name="android:textColor">@color/text_or_button</item>
-        <item name="android:fontFamily">@font/nunito_sans</item>
         <item name="android:textColorHint">@color/text_or_button</item>
-        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/roboto_mono</item>
+        <item name="android:textSize">18sp</item>
         <item name="android:background">@drawable/edittext_rounded_corners</item>
+        <item name="android:padding">12dp</item>
     </style>
 
     <style name="Theme.CarServiceApp" parent="Base.Theme.CarServiceApp" />

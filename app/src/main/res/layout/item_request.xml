@@ -4,63 +4,86 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="6dp"
-    app:cardCornerRadius="15dp"
-    app:cardElevation="2dp">
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="@color/black">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="12dp"
-        android:background="@drawable/background_rounded_corners">
-        <LinearLayout
+        android:background="@color/black"
+        android:padding="12dp">
+
+        <!-- Иконка времени -->
+        <ImageView
+            android:id="@+id/timeIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/logo"
+            android:background="@android:color/transparent"
+            app:tint="@color/text_or_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <!-- Время -->
+        <TextView
+            android:id="@+id/timeTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@android:color/transparent">
+            android:text="default time"
+            android:textColor="@color/text_or_button"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:background="@android:color/transparent"
+            app:layout_constraintStart_toEndOf="@id/timeIcon"
+            app:layout_constraintTop_toTopOf="@id/timeIcon"
+            android:paddingStart="6dp"/>
 
-            <TextView
-                android:id="@+id/timeTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="default time"
-                android:background="@android:color/transparent"
-                android:textColor="@color/text_or_button"
-                android:textSize="14sp"
-                android:textStyle="bold"/>
+        <!-- Дата -->
+        <TextView
+            android:id="@+id/dateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="default date"
+            android:textColor="@color/text_or_button"
+            android:background="@android:color/transparent"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/timeTextView"
+            app:layout_constraintTop_toTopOf="@id/timeTextView"
+            android:paddingStart="10dp"/>
 
-            <TextView
-                android:id="@+id/dateTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@android:color/transparent"
-                android:text="default date"
-                android:textColor="@color/text_or_button"
-                android:textSize="14sp"
-                android:textStyle="bold"
-                android:paddingStart="10dp"/>
-
-        </LinearLayout>
-
+        <!-- Заголовок запроса -->
         <TextView
             android:id="@+id/recyclerRequestName"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:background="@android:color/transparent"
-            android:layout_marginTop="4dp"
             android:text="default title"
             android:textColor="@color/text_or_button"
+            android:background="@android:color/transparent"
             android:textSize="16sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/timeTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"/>
 
+        <!-- Описание запроса -->
         <TextView
             android:id="@+id/descriptionTextView"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:background="@android:color/transparent"
             android:text="default description"
-            android:layout_marginTop="2dp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/purple"
             android:textSize="13sp"
-            android:textColor="@color/text_or_button"/>
-    </LinearLayout>
+            app:layout_constraintTop_toBottomOf="@id/recyclerRequestName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.cardview.widget.CardView>

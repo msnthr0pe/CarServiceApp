@@ -83,20 +83,6 @@ class ConcreteClientFragment : Fragment() {
                 Log.e("MYCLIENT", "Ошибка: ${e.message}")
             }
         }
-
-        /*lifecycleScope.launch {
-            try {
-                val clients = withContext(Dispatchers.IO) {
-                    ApiClient.authApi.getClients()
-                }
-
-                requestAdapter = RequestAdapter(clients)
-                recyclerView.adapter = requestAdapter
-
-            } catch (e: Exception) {
-                Log.e("MYCLIENT", "Ошибка: ${e.message}")
-            }
-        }*/
     }
 
     companion object {
