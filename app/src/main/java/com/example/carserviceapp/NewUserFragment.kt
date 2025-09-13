@@ -79,7 +79,9 @@ class NewUserFragment : Fragment() {
                 retypePassword.isNotEmpty()
                 ) {
                 if (password == retypePassword) {
+                    binding.progressBar.visibility = View.VISIBLE
                     registerUser(name, surname, phone, email, password)
+                    binding.progressBar.visibility = View.GONE
                 } else {
                     Toast.makeText(activity, "Пароли не совпадают", Toast.LENGTH_SHORT).show()
                 }
