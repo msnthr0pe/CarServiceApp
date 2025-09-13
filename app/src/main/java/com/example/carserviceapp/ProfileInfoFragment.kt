@@ -1,6 +1,7 @@
 package com.example.carserviceapp
 
 import android.content.Context
+import android.content.res.Configuration
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -9,6 +10,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.navigation.fragment.findNavController
 import com.example.carserviceapp.databinding.FragmentProfileInfoBinding
 
@@ -44,6 +46,20 @@ class ProfileInfoFragment : Fragment() {
         btnChangePassword = binding.btnChangePassword
         btnLogOut = binding.btnLogOut
         tvStatus = binding.tvStatus
+
+        val isDarkTheme = requireContext().resources.configuration.uiMode and
+                Configuration.UI_MODE_NIGHT_MASK == Configuration.UI_MODE_NIGHT_YES
+        if (isDarkTheme) {
+            binding.isNightTheme.isChecked = true
+        }
+
+        binding.isNightTheme.setOnCheckedChangeListener { _, isNightTheme ->
+            if (isNightTheme) {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+            } else {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+            }
+        }
 
         val prefs = requireContext().getSharedPreferences("credentials", Context.MODE_PRIVATE)
         val prefName = prefs.getString("name", "--")

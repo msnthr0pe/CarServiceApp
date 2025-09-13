@@ -24,13 +24,7 @@ class TitleFragment : Fragment() {
     ): View {
         _binding = FragmentTitleBinding.inflate(layoutInflater, container, false)
 
-        binding.isNightTheme.setOnCheckedChangeListener { _, isNightTheme ->
-            if (isNightTheme) {
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-            } else {
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-            }
-        }
+
 
         binding.btnNext.setOnClickListener {
             findNavController().navigate(R.id.action_titleFragment_to_loginFragment)
