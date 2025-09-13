@@ -5,13 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="24dp"
-    tools:context=".MainActivity">
-
-    <!-- Логотип в круглой карточке -->
-
-    <!-- Заголовок -->
-
-    <!-- Подзаголовок -->
+    tools:context=".MainActivity"
+    android:background="?attr/pngBackground">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/logoCard"
@@ -63,7 +58,7 @@
         android:background="@android:color/transparent"
         android:gravity="center"
         android:lineSpacingExtra="4dp"
-        android:text="Клиент-серверное приложение\nдля автосервиса"
+        android:text="Клиент-серверное приложение\nдля автосервиса легкоых автомобилей"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

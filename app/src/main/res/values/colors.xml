@@ -5,7 +5,7 @@
     <color name="dark_button">#2F4F4F</color> <!-- темно-серый с зеленым оттенком -->
     <color name="dark_gray">#1F1F1F</color> <!-- насыщенный оранжево-красный -->
     <color name="light_orange">#FFA07A</color> <!-- светло-коралловый -->
-    <color name="white">#E0FFFF</color> <!-- бледно-голубой, почти белый -->
+    <color name="white">#FFFFFF</color> <!-- бледно-голубой, почти белый -->
     <color name="gray">#23292E</color> <!-- серо-голубой -->
     <color name="on_surface">#191970</color> <!-- темно-синий, «ночное небо» -->
 

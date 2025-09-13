@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/titleFragment"
+    tools:theme="@style/Theme.CarServiceApp">
+
+    <fragment
+        android:id="@+id/opening_fragment"
+        android:name="com.example.carserviceapp.TitleFragment"
+        android:label="Title"
+        tools:layout="@layout/fragment_title">
+    </fragment>
+
+    <fragment
+        android:id="@+id/login_fragment"
+        android:name="com.example.carserviceapp.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+    </fragment>
+
+    <fragment
+        android:id="@+id/request_fragment"
+        android:name="com.example.carserviceapp.RequestsFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_requests">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/add_login_fragment"
+        android:name="com.example.carserviceapp.NewUserFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_new_user">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/get_clients_fragment"
+        android:name="com.example.carserviceapp.ClientsFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_clients">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/add_request_fragment"
+        android:name="com.example.carserviceapp.NewRequestFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_new_request">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/person_fragment"
+        android:name="com.example.carserviceapp.ConcreteClientFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_concrete_client">
+    </fragment>
+
+    <fragment
+        android:id="@+id/date_requests_fragment"
+        android:name="com.example.carserviceapp.CalendarRequestsFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_calendar_requests">
+    </fragment>
+
+    <fragment
+        android:id="@+id/account_fragment"
+        android:name="com.example.carserviceapp.ProfileInfoFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_profile_info">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/change_password"
+        android:name="com.example.carserviceapp.PasswordChangeFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_password_change">
+
+    </fragment>
+</navigation>

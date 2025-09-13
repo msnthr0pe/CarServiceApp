@@ -10,6 +10,7 @@
         <!-- Основной фон и акценты -->
         <item name="iconColor">@color/white</item>
         <item name="android:background">@color/gray</item>
+        <item name="pngBackground">@color/gray</item>
         <item name="colorPrimary">@color/dark_gray</item>
         <item name="colorSecondary">@color/purple</item>
         <item name="android:colorAccent">@color/light_yellow</item>

@@ -177,6 +177,7 @@ class ClientsFragment : Fragment() {
                 recyclerView.visibility = View.GONE
                 noResultsTextView.visibility = View.GONE
                 errorLayout.visibility = View.VISIBLE
+                binding.progressBar.visibility = View.GONE
                 lastQueryFailed = true
             }
         }
@@ -217,10 +218,10 @@ class ClientsFragment : Fragment() {
             clientAdapter.updateList(filtered)
             noResultsTextView.visibility = if (filtered.isEmpty()) View.VISIBLE else View.GONE
             recyclerView.visibility = if (filtered.isEmpty()) View.GONE else View.VISIBLE
+            binding.progressBar.visibility = View.GONE
         } catch (e: Exception) {
             Log.e("ATELIER", "Exception occurred")
         }
-        binding.progressBar.visibility = View.GONE
     }
 
     private fun getHistoryPrefs(): SharedPreferences {
