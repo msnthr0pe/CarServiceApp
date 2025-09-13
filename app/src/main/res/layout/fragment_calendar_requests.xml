@@ -58,21 +58,20 @@
     <!-- RecyclerView в "панели" -->
     <androidx.cardview.widget.CardView
         android:id="@+id/recyclerCard"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
         android:layout_margin="16dp"
         app:cardCornerRadius="20dp"
         app:cardElevation="8dp"
-        app:cardBackgroundColor="?attr/pngBackground"
-        app:layout_constraintTop_toBottomOf="@id/calendarCard"
-        app:layout_constraintBottom_toTopOf="@id/customBottomBar2"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/calendarCard">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/calendarRecycler"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="?attr/pngBackground"
             android:padding="8dp"
             tools:itemCount="3"
             tools:listitem="@layout/item_request" />
